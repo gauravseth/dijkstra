@@ -14,7 +14,7 @@ class  Dijkstra
     result_path_node = []
     @vertics_hash.keys.each do |k|
       arr = []
-      arr << 1.0/0.0
+      arr << 1.0/0.0 # to save infinite as value in the beginning
       arr << k
     result_hash[k]=arr
     end
@@ -58,7 +58,7 @@ class  Dijkstra
     end
     return result_hash
   end
-
+# get direct linked node with distance
   def get_direct_link_shorage_value(hash,source,child_hash)
     child_result = {}
     hash.each do|k,v_hash|
