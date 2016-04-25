@@ -1,0 +1,14 @@
+1. Input will take in the form of hash which will give distance from one node to other
+exaple
+ @dijks = Dijkstra.new
+@dijks.add_vertex('b',{'a' => 7, 'f'=>2})
+@dijks.add_vertex('c',{'a' => 8, 'f'=>6, 'g'=> 4})
+@dijks.add_vertex('d',{'f'=>8})
+@dijks.add_vertex('e',{'h'=>1})
+@dijks.add_vertex('f',{'b' => 2, 'c'=>6, 'd'=>8, 'g' => 9, 'h'=> 3})
+@dijks.add_vertex('g',{'c' => 4, 'f'=>9})
+@dijks.add_vertex('h',{'e' => 1, 'f'=>3}) 
+
+This will set vertex distance
+2. get_sourch_path_from_node_to_node(source,dist)
+above function will give distance from source to distination 
